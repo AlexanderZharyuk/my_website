@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #162129;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(15,23,29, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0ebf2;
+    position: fixed;
+    backdrop-filter: blur(5px);
+}
+
+.sites_categories {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 18px;
+}
+
+.category_name {
+    transition: 0.4s;
+    padding-left: 25px;
+}
+
+.about:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    color: rgb(255, 123, 123);
+}
+
+.portfolio:hover {
+    cursor: pointer;
+    color: rgb(253, 154, 87);
+}
+
+.contacts:hover {
+    cursor: pointer;
+    color: rgb(123, 255, 255);
+}
+
+.short_bio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.short_bio_block {
+    margin: 100px 50px 0px 100px;
+}
+
+.present_name {
+    color: #a2f8b4;
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.short_bio_text {
+    margin-top: 20px;
+    color: #e0ebf2;
+    width: 75%;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+}
+
+a {
+    text-decoration: none;
+    color: #e0ebf2;
+}
+
+.linkedin {
+    color: #39a2f2;
+    border-bottom: 2px solid #39a2f2;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    color: #a2f8b4;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #a2f8b4;
+}
+
+.email {
+    color: rgb(253, 154, 87);
+    border-bottom: 2px solid rgb(253, 154, 87);
+    transition: 0.3s;
+}
+
+.email:hover {
+    color: #a2f8b4;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #a2f8b4;
+}
+
+.portfolio_span {
+    color: #a2f8b4;
+    border-bottom: 2px solid #a2f8b4;
+    transition: 0.3s;
+}
+
+.portfolio_span:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #a2f8b4;
+}
+
+.developer_photo{
+    margin-top: 200px;
+    margin-right: 100px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 6px #e0ebf2;
+    border-radius: 50%;
+    box-shadow:
+    0 0 20px 2px #a2f8b4; 
+}
+
+.about_section {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about_title {
+    color: #a2f8b4;
+    font-weight: 700;
+    font-size: 60px;
+    margin-left: 100px;
+}
+
+.about_text {
+    margin-top: 20px;
+    color: #e0ebf2;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    margin-left: 100px;
+    width: 73%;
+}
+
+.skills_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_title {
+    color: #a2f8b4;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.skills_list {
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.skill_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills {
+    color: #e0ebf2;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 225px;
+}
+
+.final_section {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio_block {
+    margin-bottom: 30px;
+}
+
+.portfolio_title {
+    color: #a2f8b4;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.project_block {
+    height: 100px;
+    margin-left: 100px;
+    display: flex;
+    border: solid 1px #1c2c35;
+    border-radius: 15px;
+    align-items: center;
+    width: 800px;
+    margin-bottom: 20px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.project_block:hover {
+    background-color: #0f382c;
+    border-left: solid 4px #a2f8b4;
+    box-shadow: inset 7px 0 9px -10px #a2f8b4;
+}
+
+.project_info {
+    margin-left: 20px;
+}
+
+.project_name {
+    color: #e0ebf2;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.project_data {
+    color: #567f98;
+    font-size: 14px;
+}
+
+.project_language_icon {
+    width: 25px;
+    height: 25px;
+    padding-left: 45px;
+}
+
+.link_to_github {
+    display: block;
+    text-align: center;
+    color: #e0ebf2;
+}
+
+.github {
+    color: rgb(255, 123, 123);
+    transition: 0.4s;
+    border-bottom: 2px solid rgb(255, 123, 123);
+}
+
+.github:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(255, 123, 123);
+}
+
+.contact_block {
+    margin-right: 150px;
+}
+
+.contact_me {
+    color: #a2f8b4;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.contact_info {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact {
+    color: #e0ebf2;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(15,23,29, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #979797;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+@media (max-width: 767px) {
+
+    header {
+        width: 100%;
+        position: relative;
+    }
+
+    main {
+        width: 100%;
+    }
+    
+    .short_bio {
+        display: block;
+    }
+
+    .short_bio_block {
+        margin: 0px 10px;
+    }
+
+    .present_name {
+        margin: auto;
+        text-align: center;
+    }
+
+    .short_bio_text {
+        margin: 15px auto;
+        text-align: justify;
+    }
+
+    .developer_photo {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .about_section {
+        margin-top: 0px;
+        display: block;
+    }
+
+    .about_title {
+        text-align: center;
+        margin: 50px 0px 20px 0px;
+    }
+
+    .about_text {
+        margin: auto;
+        text-align: justify;
+    }
+
+    .skills_title {
+        text-align: center;
+        margin: 50px 0px 20px 0px;
+    }
+
+    .skills_list {
+        margin-left: 56px;
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .skill_info {
+        width: 30px;
+    }
+
+    .final_section {
+        display: block;
+        margin: auto;
+    }
+
+    .portfolio_title {
+        margin: 50px 0px 20px 0px;
+        text-align: center;
+    }
+
+    .project_block {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .project_language_icon {
+        padding-left: 56px;
+    }
+
+    .contact_block {
+        text-align: center;
+        margin: 50px 0px 20px 0px;
+    }
+
+    .developer_contacts {
+        margin: 0px 56px 50px 56px;
+    }
+
+    .portfolio_block {
+        margin-bottom: 0px;
+    }
+    
+    .link_to_github {
+        display: block;
+        margin: 0px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1270px) {
+
+    header {
+        width: 100%;
+        position: relative;
+    }
+
+    main {
+        width: 100%;
+    }
+    
+    .short_bio {
+        display: block;
+    }
+
+    .short_bio_block {
+        margin: 0px 10px;
+    }
+
+    .present_name {
+        margin: auto;
+        text-align: center;
+    }
+
+    .short_bio_text {
+        margin: 15px auto;
+        text-align: justify;
+    }
+
+    .developer_photo {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .about_section {
+        margin-top: 0px;
+        display: block;
+    }
+
+    .about_title {
+        text-align: center;
+        margin: 50px 0px 20px 0px;
+    }
+
+    .about_text {
+        margin: auto;
+        text-align: justify;
+    }
+
+    .skills_title {
+        text-align: center;
+        margin: 50px 0px 20px 0px;
+    }
+
+    .skills_list {
+        margin-left: 56px;
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .skill_info {
+        width: 30px;
+    }
+
+    .final_section {
+        display: block;
+        margin: auto;
+    }
+
+    .portfolio_title {
+        margin: 50px 0px 20px 0px;
+        text-align: center;
+    }
+
+    .project_block {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .project_language_icon {
+        padding-left: 56px;
+    }
+
+    .contact_block {
+        text-align: center;
+        margin: 30px 0px 0px 0px;
+    }
+    .developer_contacts {
+        display: inline-block;
+        margin: 0px 50px 50px 52px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media (device-width: 1280px) {
+    .contact_block {
+        margin-right: 80px;
+    }
+}
+

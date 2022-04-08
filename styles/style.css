@@ -507,7 +507,33 @@ footer {
 
 @media (device-width: 1280px) {
     .contact_block {
-        margin-right: 80px;
+        margin-right: 83px;
+    }
+}
+
+@media (device-width: 1920px) {
+    .short_bio_block {
+        margin-left: 200px;
+    }
+
+    .developer_photo {
+        margin-right: 200px;
+    }
+
+    .skills_block {
+        margin-right: 100px;
+    }
+
+    .about_block {
+        margin-left: 100px;
+    }
+
+    .contact_block {
+        margin-right: 177px;
+    }
+
+    .portfolio_block {
+        margin-left: 100px;
     }
 }
 
